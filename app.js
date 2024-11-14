@@ -2,6 +2,9 @@
 const express = require('express');
 const app = express();
 
+app.get('/', (req, res) => {
+  res.send('¡Servidor funcionando correctamente!');
+});
 // Define el controlador para el endpoint GET
 app.get('/saludo', (req, res) => {
   res.send('Hola Mundo');
